@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "cd iiff-backend && node server.js",
     "start": "cd iiff-backend && node server.js",
-    "postinstall": "cd iff-backend && npm install"
+    "postinstall": "cd iiff-backend && npm install"
   },
   "keywords": [],
   "author": "",
