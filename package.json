@@ -1,0 +1,15 @@
+{
+  "name": "iiff",
+  "version": "1.0.0",
+  "description": "IIFF Application",
+  "type": "module",
+  "scripts": {
+    "dev": "cd iiff-backend && node server.js",
+    "start": "cd iiff-backend && node server.js",
+    "postinstall": "cd iiff-backend && npm install"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
+
