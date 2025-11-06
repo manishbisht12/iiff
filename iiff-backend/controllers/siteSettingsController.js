@@ -1,7 +1,7 @@
 // // // import multer from 'multer';
 // // // import path from 'path';
 // // // import fs from 'fs';
-// // // import SiteSettings from '../models/siteSettingsModel.js';
+// // // import SiteSettings from '../models/SiteSettingsModel.js';
 
 // // // // Multer storage config for different files in different folders
 // // // const storage = multer.diskStorage({
@@ -136,7 +136,7 @@
 // // import multer from 'multer';
 // // import path from 'path';
 // // import fs from 'fs';
-// // import SiteSettings from '../models/siteSettingsModel.js';
+// // import SiteSettings from '../models/SiteSettingsModel.js';
 
 // // // Helper function to normalize file paths with forward slashes
 // // const normalizePath = (filePath) => {
@@ -274,7 +274,7 @@
 // import multer from 'multer';
 // import path from 'path';
 // import fs from 'fs';
-// import SiteSettings from '../models/siteSettingsModel.js';
+// import SiteSettings from '../models/SiteSettingsModel.js';
 
 // // Helper function to normalize file paths with forward slashes
 // const normalizePath = (filePath) => {
@@ -464,7 +464,7 @@
 import multer from 'multer';
 import path from 'path';
 import fs from 'fs';
-import SiteSettings from '../models/siteSettingsModel.js';
+import SiteSettings from '../models/SiteSettingsModel.js';
 
 // Helper to normalize path slashes
 const normalizePath = (filePath) => {
