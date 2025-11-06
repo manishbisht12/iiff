@@ -1,0 +1,606 @@
+participate.css
+
+.outer {
+  width: 100%;
+  height: auto;
+  gap: 10px;
+  opacity: 1;
+  padding: 50px 141px;
+  background: #F3F7FF;
+  box-sizing: border-box;
+  margin: 0 auto; /* center horizontally */
+}
+
+.page {
+  width: 1320px;
+  height: auto;
+  gap: 40px;
+  opacity: 1;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+.head-logo {
+  width: 1320px;
+  height: 178px;
+ 
+  
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.head {
+  width: 1320px;
+  height: 90px;
+  opacity: 1;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 28px;
+  line-height: 90px;
+  text-align: center;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.logo {
+  width: 200px;
+  height: 18px;
+  opacity: 1;
+  /* Add image or background if required */
+}
+
+/* All content blocks share same style */
+.All_content > div {
+  width: 1280px;
+  min-height: 100px;
+  border-radius: 10px;
+  padding: 25px;
+  background: #FFFFFF;
+  border: 1px solid #E6E6E6;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+/* Optional: override special ones if needed */
+.content9,
+.content10,
+.content11 {
+  border: none;
+  background: transparent;
+  padding: 0;
+}
+
+/* Text styles for inside content */
+.content-title {
+  font-size: 20px;
+  margin-bottom: 10px;
+  line-height: 1.4;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.content-id {
+  color: orange;
+  font-weight: 700;
+  margin-right: 8px;
+  font-size: 20px;
+}
+
+.content-heading {
+  font-size: 22px;
+  font-weight: 600;
+  color: #000000;
+}
+
+.content-description {
+  color: #2f2f2f; /* faded black */
+  font-size: 15px;
+  line-height: 1.7;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* participate.css */
+.outer {
+  width: 100%;
+  min-height: auto;
+  gap: 10px;
+  opacity: 1;
+  padding: 50px 20px; /* Reduced side padding for mobile */
+  background: #F3F7FF;
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+
+.page {
+  width: 100%;
+  max-width: 1320px; /* Set max-width instead of fixed width */
+  height: auto;
+  gap: 40px;
+  opacity: 1;
+  margin: 0 auto;
+  box-sizing: border-box;
+  padding: 0 20px; /* Add padding for better mobile spacing */
+}
+
+.head-logo {
+  width: 100%;
+  max-width: 1320px;
+  height: auto; /* Auto height for better responsiveness */
+  min-height: 120px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.head {
+  width: 100%;
+  max-width: 1320px;
+  height: auto;
+  min-height: 60px;
+  opacity: 1;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 32px;
+  line-height: 1.3;
+  text-align: center;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto 20px auto;
+  padding: 20px 10px;
+  box-sizing: border-box;
+}
+
+.logo {
+  width: 200px;
+  height: 18px;
+  opacity: 1;
+  flex-shrink: 0;
+}
+
+.logo img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+.All_content {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* All content blocks share same style */
+.All_content > div {
+  width: 100%;
+  max-width: 1280px;
+  min-height: 100px;
+  border-radius: 10px;
+  padding: 25px;
+  background: #FFFFFF;
+  border: 1px solid #E6E6E6;
+  box-sizing: border-box;
+  margin: 0 auto 20px auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+/* Special styling for specific content blocks */
+.content9, 
+.content10, 
+.content11 {
+  border: none;
+  background: transparent;
+  padding: 0;
+}
+
+.content9:hover,
+.content10:hover,
+.content11:hover {
+  transform: none;
+}
+
+/* Text styles for inside content */
+.content-title {
+  font-size: 20px;
+  margin-bottom: 10px;
+  line-height: 1.4;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.content-id {
+  color: orange;
+  font-weight: 700;
+  font-size: 20px;
+  flex-shrink: 0;
+}
+
+.content-heading {
+  font-size: 22px;
+  font-weight: 600;
+  color: #000000;
+  line-height: 1.3;
+}
+
+.content-description {
+  color: #2f2f2f;
+  font-size: 15px;
+  line-height: 1.7;
+  margin-top: 5px;
+}
+
+/* Large Desktop (1400px and above) */
+@media screen and (min-width: 1400px) {
+  .outer {
+    padding: 60px 40px;
+  }
+  
+  .head {
+    font-size: 36px;
+  }
+  
+  .All_content > div {
+    padding: 35px;
+  }
+  
+  .content-description {
+    font-size: 15px;
+  }
+}
+
+/* Desktop (1200px - 1399px) */
+@media screen and (max-width: 1399px) {
+  .outer {
+    padding: 50px 30px;
+  }
+  
+  .head {
+    font-size: 30px;
+  }
+}
+
+/* Large Tablet (1024px - 1199px) */
+@media screen and (max-width: 1199px) {
+  .outer {
+    padding: 45px 25px;
+  }
+  
+  .page {
+    padding: 0 15px;
+  }
+  
+  .head {
+    font-size: 28px;
+    padding: 15px 10px;
+  }
+  
+  .All_content > div {
+    padding: 25px;
+    border-radius: 10px;
+  }
+  
+  .content-title {
+    font-size: 20px;
+  }
+  
+  .content-id {
+    font-size: 20px;
+  }
+  
+  .content-heading {
+    font-size: 20px;
+  }
+  
+  .content-description {
+    font-size: 15px;
+  }
+}
+
+/* Tablet (768px - 1023px) */
+@media screen and (max-width: 1023px) {
+  .outer {
+    padding: 40px 20px;
+  }
+  
+  .page {
+    padding: 0 10px;
+  }
+  
+  .head {
+    font-size: 26px;
+    line-height: 1.2;
+    padding: 15px 5px;
+  }
+  
+  .logo {
+    width: 180px;
+    height: 16px;
+  }
+  
+  .All_content > div {
+    padding: 22px;
+    margin-bottom: 18px;
+  }
+  
+  .content-title {
+    font-size: 19px;
+    margin-bottom: 12px;
+  }
+  
+  .content-id {
+    font-size: 19px;
+  }
+  
+  .content-heading {
+    font-size: 19px;
+  }
+  
+  .content-description {
+    font-size: 14px;
+    line-height: 1.6;
+  }
+  
+  .content9, 
+  .content10, 
+  .content11 {
+    padding: 0;
+  }
+}
+
+/* Mobile Large (600px - 767px) */
+@media screen and (max-width: 767px) {
+  .outer {
+    padding: 35px 15px;
+  }
+  
+  .page {
+    padding: 0 5px;
+  }
+  
+  .head-logo {
+    margin-bottom: 25px;
+  }
+  
+  .head {
+    font-size: 24px;
+    line-height: 1.2;
+    padding: 10px 5px;
+    min-height: 50px;
+  }
+  
+  .logo {
+    width: 160px;
+    height: 14px;
+  }
+  
+  .All_content {
+    gap: 15px;
+  }
+  
+  .All_content > div {
+    padding: 20px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+  }
+  
+  .content-title {
+    font-size: 18px;
+    margin-bottom: 10px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+  }
+  
+  .content-id {
+    font-size: 18px;
+  }
+  
+  .content-heading {
+    font-size: 18px;
+    line-height: 1.2;
+  }
+  
+  .content-description {
+    font-size: 14px;
+    line-height: 1.5;
+  }
+  
+  .content9, 
+  .content10, 
+  .content11 {
+    padding: 15px 20px;
+  }
+}
+
+/* Mobile Medium (480px - 599px) */
+@media screen and (max-width: 599px) {
+  .outer {
+    padding: 30px 12px;
+  }
+  
+  .head {
+    font-size: 22px;
+    padding: 10px 0;
+  }
+  
+  .logo {
+    width: 140px;
+    height: 12px;
+  }
+  
+  .All_content > div {
+    padding: 18px;
+    margin-bottom: 12px;
+  }
+  
+  .content-title {
+    font-size: 17px;
+    margin-bottom: 8px;
+  }
+  
+  .content-id {
+    font-size: 17px;
+  }
+  
+  .content-heading {
+    font-size: 17px;
+  }
+  
+  .content-description {
+    font-size: 13px;
+    line-height: 1.4;
+  }
+  
+  .content9, 
+  .content10, 
+  .content11 {
+    padding: 12px 18px;
+  }
+}
+
+/* Mobile Small (320px - 479px) */
+@media screen and (max-width: 479px) {
+  .outer {
+    padding: 25px 10px;
+  }
+  
+  .head {
+    font-size: 20px;
+    line-height: 1.1;
+    padding: 8px 0;
+  }
+  
+  .logo {
+    width: 120px;
+    height: 10px;
+  }
+  
+  .head-logo {
+    margin-bottom: 20px;
+  }
+  
+  .All_content {
+    gap: 12px;
+  }
+  
+  .All_content > div {
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+  }
+  
+  .content-title {
+    font-size: 16px;
+    margin-bottom: 8px;
+  }
+  
+  .content-id {
+    font-size: 16px;
+  }
+  
+  .content-heading {
+    font-size: 16px;
+    line-height: 1.2;
+  }
+  
+  .content-description {
+    font-size: 12px;
+    line-height: 1.4;
+  }
+  
+  .content9, 
+  .content10, 
+  .content11 {
+    padding: 10px 15px;
+  }
+}
+
+/* Extra Small Mobile (max-width: 320px) */
+@media screen and (max-width: 320px) {
+  .outer {
+    padding: 20px 8px;
+  }
+  
+  .head {
+    font-size: 18px;
+    line-height: 1.1;
+    padding: 5px 0;
+  }
+  
+  .logo {
+    width: 100px;
+    height: 9px;
+  }
+  
+  .All_content > div {
+    padding: 12px;
+    margin-bottom: 8px;
+  }
+  
+  .content-title {
+    font-size: 15px;
+    margin-bottom: 6px;
+  }
+  
+  .content-id {
+    font-size: 15px;
+  }
+  
+  .content-heading {
+    font-size: 15px;
+  }
+  
+  .content-description {
+    font-size: 11px;
+    line-height: 1.3;
+  }
+  
+  .content9, 
+  .content10, 
+  .content11 {
+    padding: 8px 12px;
+  }
+}
+
+/* Remove dark mode and hover effects sections */
+
+/* Hover effects for mobile - reduce on touch devices */
+@media (hover: none) {
+  .All_content > div:hover {
+    transform: none;
+  }
+}

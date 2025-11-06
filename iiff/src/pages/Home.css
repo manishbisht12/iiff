@@ -1,0 +1,423 @@
+/* Reset box sizing and margin/padding */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* VIDEO SECTION */
+.video {
+  width: 100%;
+  height: 700px;
+  background-color: #ced1bd;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.video > div {
+  width: 66%;
+  max-width: 1200px;
+  height: 700px;
+  background-color: #181817;
+}
+
+.video iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+/* MAIN MESSAGE CONTAINER */
+.message-from {
+  max-width: 1320px;
+  width: 100%;
+  margin: 70px auto 0;
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+/* HEADER SECTION */
+.topmsg-div {
+  text-align: center;
+  width: 100%;
+}
+
+.innertop {
+  font-size: 3.5rem; /* ~55px */
+  font-weight: 700;
+  white-space: nowrap;
+  margin-bottom: 30px;
+}
+
+.message_logo img {
+  width: 200px;
+  height: 18px;
+  object-fit: contain;
+  display: inline-block;
+}
+
+/* APPLICATION SECTIONS */
+.application,
+.application2 {
+  width: 100%;
+  max-width: 1280px;
+  background-color: #f8f8f8;
+  border-radius: 20px;
+  padding: 20px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* CHIRAG IMAGE */
+.chirag {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.chirag img {
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+/* BOTTOM MESSAGE SECTION (LEFT, CENTER IMAGE, RIGHT) */
+.bottom_message {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 20px;
+  width: 100%;
+}
+
+.left_msg,
+.right_msg {
+  flex: 1 1 260px;
+  font-size: 1.25rem;
+  font-weight: 500;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.satyamew {
+  flex: 2 1 630px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.satyamew img {
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+/* HEADINGS */
+.head {
+  font-weight: 700;
+  font-size: 2rem;
+  line-height: 1.3;
+  text-align: center;
+  margin: 3rem 0 1rem;
+  word-break: break-word;
+}
+
+/* MESSAGES */
+.all_msg {
+  max-width: 1100px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 20px;
+  padding: 0 10px;
+  box-sizing: border-box;
+}
+
+.sandesh {
+  font-size: 1rem;
+  line-height: 1.6;
+  letter-spacing: 0.5px;
+  text-align: left;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+/* LAST MESSAGE SIGNATURE */
+.last_msg {
+  width: 100%;
+  max-width: 1100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.jai {
+  font-size: 1.125rem;
+  line-height: 1.4;
+  text-align: left;
+  flex: 1 1 300px;
+}
+
+.sign-name {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 10px;
+  flex: 1 1 300px;
+}
+
+.sign-name .sign img {
+  width: 100%;
+  max-width: 324px;
+  height: auto;
+  object-fit: contain;
+}
+
+.sign-name .name {
+  font-size: 1.125rem;
+  line-height: 1.4;
+  text-align: right;
+  color: #000;
+}
+
+/* APPLICATION 2 (JAYANT CHAUDHARY) */
+
+.btm_msg {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.left_msg1 {
+  flex: 0 1 215px;
+  min-width: 200px;
+  font-weight: 700;
+  font-size: 1.25rem;
+  line-height: 1.25;
+  text-align: center;
+}
+
+.right_msg2 {
+  flex: 1 1 auto;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.right_msg3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.right_msgHindi {
+  font-weight: 700;
+  font-size: 1.25rem;
+  line-height: 1.5;
+  text-align: center;
+}
+
+.right_msgEnglish {
+  max-width: 370px;
+  width: 100%;
+  font-size: 1rem;
+  line-height: 1.4;
+  text-align: center;
+  color: #000;
+}
+
+/* PROFILE IMAGE */
+.profile {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  width: 100%;
+}
+
+.profile img {
+  width: 100px;
+  height: auto;
+  object-fit: contain;
+}
+
+/* ALL_MSG2 and SIGNATURE */
+.all_msg2 {
+  max-width: 1200px;
+  width: 100%;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 0 10px;
+  box-sizing: border-box;
+}
+
+.sandesh2 {
+  font-size: 1.125rem;
+  line-height: 1.6;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  color: #000;
+}
+
+.sign-name2 {
+  max-width: 1280px;
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  opacity: 1;
+  box-sizing: border-box;
+}
+
+.sign2 img {
+  width: 70px;
+  height: 41px;
+  object-fit: contain;
+}
+
+.name2 {
+  font-size: 1.125rem;
+  line-height: 1.4;
+  text-align: right;
+}
+
+/* ========== RESPONSIVE BREAKPOINTS ========== */
+
+/* Large desktops and laptops */
+@media (max-width: 1440px) {
+  .video {
+    height: 600px;
+  }
+  .video > div {
+    width: 80%;
+    height: 600px;
+  }
+  .innertop {
+    font-size: 3rem;
+  }
+  .bottom_message {
+    gap: 15px;
+  }
+}
+
+/* Medium devices (tablets, landscape phones) */
+@media (max-width: 1024px) {
+  .video {
+    height: 500px;
+    padding: 0 10px;
+  }
+  .video > div {
+    width: 90%;
+    height: 500px;
+  }
+  .innertop {
+    font-size: 2.5rem;
+    white-space: normal;
+  }
+  .bottom_message,
+  .btm_msg {
+    flex-direction: column;
+    align-items: center;
+  }
+  .left_msg,
+  .left_msg1,
+  .right_msg,
+  .right_msg2 {
+    width: 100%;
+    text-align: center;
+    flex: none;
+  }
+  .satyamew {
+    max-width: 400px;
+    width: 100%;
+  }
+  .sign-name {
+    align-items: center;
+  }
+  .sign-name .name {
+    text-align: center;
+  }
+  .last_msg {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+/* Small devices (phones) */
+@media (max-width: 600px) {
+  .video {
+    height: 300px;
+  }
+  .video > div {
+    height: 300px;
+    width: 100%;
+  }
+  .innertop {
+    font-size: 1.8rem;
+  }
+  .application,
+  .application2,
+  .message-from {
+    padding: 10px;
+  }
+  .bottom_message,
+  .btm_msg,
+  .last_msg {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+  .left_msg,
+  .left_msg1,
+  .right_msg,
+  .right_msg2,
+  .jai,
+  .sign-name {
+    width: 100%;
+    text-align: center;
+    flex: none;
+  }
+  .sign-name .sign img {
+    max-width: 100%;
+    width: 200px;
+  }
+  .sign-name .name,
+  .name2 {
+    font-size: 1rem;
+  }
+  .profile img {
+    width: 80px;
+  }
+  .right_msgEnglish {
+    max-width: 100%;
+    width: 100%;
+  }
+}

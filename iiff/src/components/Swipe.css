@@ -1,0 +1,574 @@
+.swiper-container-wrapper {
+  width: 100%;
+  height: 949px;
+  margin: 0 auto;
+  opacity: 1;
+  border-radius: 20px;
+  padding: 70px 141px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  box-sizing: border-box;
+}
+
+.slide-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.left-content {
+  flex: 1;
+  color: #000;
+}
+
+.right-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.right-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+/* Typography styles */
+.session {
+  font-weight: bold;
+  color: #000;
+  margin-bottom: 10px;
+  font-size: 22px;
+}
+
+.title {
+  font-weight: bold;
+  color: #000;
+  font-size: 26px;
+  margin-bottom: 15px;
+}
+
+/* Updated Speaker, Designation, Institute styles */
+/* Brown color for only the span elements */
+.speaker span,
+.designation span,
+.institute span {
+  color: #8B5C23;
+  font-weight: bold;
+}
+
+/* Remove brown color from parent p so only spans are brown */
+.speaker,
+.designation,
+.institute {
+  color: inherit; /* inherit color from container or default */
+  font-weight: 500;
+  margin-bottom: 5px;
+  font-size: 16px;
+}
+
+/* Fade effect for title, speaker, designation, institute text */
+.title,
+.speaker,
+.designation,
+.institute {
+  position: relative;
+  overflow: hidden;
+  max-width: 100%;
+  color: #000; /* keep base color black */
+}
+
+/* Add a fade gradient overlay from left to right */
+.title::after,
+.speaker::after,
+.designation::after,
+.institute::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 40%; /* fade width */
+  height: 100%;
+  pointer-events: none;
+  mix-blend-mode: multiply;
+}
+
+
+/* Updated content styles */
+.content {
+  margin-top: 15px;
+  color: #2f2f2f;
+  font-size: 16px;    /* increased font size */
+  line-height: 1.8;   /* increased line height */
+}
+
+.themes-container {
+  width: 1320px;
+  height: 108px;
+  opacity: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 40px auto; /* space below */
+}
+
+.themes-title {
+  width: 1320px;
+  height: 70px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  font-size: 35px;
+  line-height: 70px;
+  text-align: center;
+  color: #000;
+  margin: 0;
+}
+
+.themes-image {
+  width: 200px;
+  height: 18px;
+  opacity: 1;
+}
+
+.slide-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.session {
+  font-weight: bold;
+  color: #000;
+  font-size: 22px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Navigation arrows color and size */
+.swiper-button-next,
+.swiper-button-prev {
+  color: blue;       /* arrow color */
+  width: 25px;       /* reduce width */
+  height: 25px;      /* reduce height */
+  top: 50%;          /* vertically center */
+  transform: translateY(-50%);
+}
+
+/* Optional: make arrows more visible on dark backgrounds */
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  font-size: 25px;   /* arrow icon size */
+  font-weight: bold;
+  color: black;      /* arrow icon color */
+}
+
+/* Pagination bullets color and size */
+.swiper-pagination-bullet {
+  background-color: black;  /* bullet color */
+  width: 12px;              /* smaller size */
+  height: 12px;
+  opacity: 0.7;
+  margin: 0 5px !important;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: darkorange;  /* active bullet color */
+  opacity: 1;
+  width: 14px;                   /* slightly bigger active bullet */
+  height: 14px;
+} 
+
+
+
+
+
+
+
+
+/* Swiper Container */
+.swiper-container-wrapper {
+  width: 100%;
+  height: 949px;
+  margin: 0 auto;
+  opacity: 1;
+  border-radius: 20px;
+  padding: 70px 141px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  box-sizing: border-box;
+}
+
+.slide-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.left-content {
+  flex: 1;
+  color: #000;
+  min-width: 300px;
+}
+
+.right-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 200px;
+}
+
+.right-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+/* Typography styles */
+.session {
+  font-weight: bold;
+  color: #000;
+  margin-bottom: 10px;
+  font-size: 22px;
+}
+
+.title {
+  font-weight: bold;
+  color: #000;
+  font-size: 26px;
+  margin-bottom: 15px;
+  line-height: 1.3;
+}
+
+/* Speaker, Designation, Institute styles */
+.speaker span,
+.designation span,
+.institute span {
+  color: #8B5C23;
+  font-weight: bold;
+}
+
+.speaker,
+.designation,
+.institute {
+  color: inherit;
+  font-weight: 500;
+  margin-bottom: 5px;
+  font-size: 16px;
+}
+
+/* Fade effect for title, speaker, designation, institute text */
+.title,
+.speaker,
+.designation,
+.institute {
+  position: relative;
+  overflow: hidden;
+  max-width: 100%;
+  color: #000;
+}
+
+.title::after,
+.speaker::after,
+.designation::after,
+.institute::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 40%;
+  height: 100%;
+  pointer-events: none;
+  mix-blend-mode: multiply;
+}
+
+/* Content styles */
+.content {
+  margin-top: 15px;
+  color: #2f2f2f;
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+.themes-container {
+  width: 100%;
+  max-width: 1320px;
+  height: 108px;
+  opacity: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 40px auto;
+}
+
+.themes-title {
+  width: 100%;
+  height: 70px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  font-size: 35px;
+  line-height: 70px;
+  text-align: center;
+  color: #000;
+  margin: 0;
+}
+
+.themes-image {
+  width: 200px;
+  height: 18px;
+  opacity: 1;
+}
+
+.slide-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.session {
+  font-weight: bold;
+  color: #000;
+  font-size: 22px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Navigation arrows color and size */
+.swiper-button-next,
+.swiper-button-prev {
+  color: blue;
+  width: 25px;
+  height: 25px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  font-size: 25px;
+  font-weight: bold;
+  color: black;
+}
+
+/* Pagination bullets color and size */
+.swiper-pagination-bullet {
+  background-color: black;
+  width: 12px;
+  height: 12px;
+  opacity: 0.7;
+  margin: 0 5px !important;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: darkorange;
+  opacity: 1;
+  width: 14px;
+  height: 14px;
+}
+
+/* RESPONSIVE DESIGN */
+
+/* Tablet styles (768px - 1024px) */
+@media screen and (max-width: 1024px) {
+  .swiper-container-wrapper {
+    padding: 50px 40px;
+    height: auto;
+    min-height: 700px;
+  }
+  
+  .themes-title {
+    font-size: 28px;
+    line-height: 1.3;
+    height: auto;
+    padding: 10px 0;
+  }
+  
+  .themes-container {
+    height: auto;
+    margin-bottom: 30px;
+  }
+  
+  .slide-content {
+    gap: 30px;
+  }
+  
+  .title {
+    font-size: 22px;
+  }
+  
+  .session {
+    font-size: 20px;
+  }
+  
+  .speaker,
+  .designation,
+  .institute {
+    font-size: 15px;
+  }
+  
+  .content {
+    font-size: 15px;
+    line-height: 1.6;
+  }
+  
+  .left-content {
+    min-width: 250px;
+  }
+  
+  .right-image {
+    min-width: 180px;
+  }
+}
+
+/* Mobile styles (max-width: 768px) */
+@media screen and (max-width: 768px) {
+  .swiper-container-wrapper {
+    padding: 30px 20px;
+    height: auto;
+    min-height: 600px;
+  }
+  
+  .themes-title {
+    font-size: 24px;
+    line-height: 1.2;
+    padding: 10px 0;
+  }
+  
+  .themes-image {
+    width: 150px;
+    height: 14px;
+  }
+  
+  .slide-content {
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+  }
+  
+  .left-content,
+  .right-image {
+    width: 100%;
+    min-width: auto;
+  }
+  
+  .title {
+    font-size: 20px;
+    margin-bottom: 12px;
+    text-align: center;
+  }
+  
+  .session {
+    font-size: 18px;
+    margin-bottom: 15px;
+  }
+  
+  .speaker,
+  .designation,
+  .institute {
+    font-size: 14px;
+    text-align: center;
+  }
+  
+  .content {
+    font-size: 14px;
+    line-height: 1.5;
+    text-align: center;
+  }
+  
+  .right-image {
+    order: -1; /* Move image above text on mobile */
+  }
+  
+  .right-image img {
+    max-width: 80%;
+  }
+  
+  /* Adjust navigation arrows for mobile */
+  .swiper-button-next,
+  .swiper-button-prev {
+    width: 20px;
+    height: 20px;
+  }
+  
+  .swiper-button-next::after,
+  .swiper-button-prev::after {
+    font-size: 20px;
+  }
+  
+  .swiper-pagination-bullet {
+    width: 10px;
+    height: 10px;
+    margin: 0 3px !important;
+  }
+  
+  .swiper-pagination-bullet-active {
+    width: 12px;
+    height: 12px;
+  }
+}
+
+/* Small mobile styles (max-width: 480px) */
+@media screen and (max-width: 480px) {
+  .swiper-container-wrapper {
+    padding: 20px 15px;
+    min-height: 500px;
+  }
+  
+  .themes-title {
+    font-size: 20px;
+    line-height: 1.1;
+  }
+  
+  .themes-image {
+    width: 120px;
+    height: 12px;
+  }
+  
+  .title {
+    font-size: 18px;
+  }
+  
+  .session {
+    font-size: 16px;
+  }
+  
+  .speaker,
+  .designation,
+  .institute {
+    font-size: 13px;
+  }
+  
+  .content {
+    font-size: 13px;
+    line-height: 1.4;
+  }
+  
+  .slide-content {
+    gap: 15px;
+  }
+  
+  .right-image img {
+    max-width: 90%;
+  }
+  
+  /* Hide navigation arrows on very small screens */
+  .swiper-button-next,
+  .swiper-button-prev {
+    display: none;
+  }
+}
+
+
+
+
+
+

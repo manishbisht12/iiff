@@ -1,0 +1,620 @@
+/* Container for the entire header */
+
+
+.left-container {
+  padding: 16px 140px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+
+/* Logo styles */
+.logo-image-header {
+  height: 80px;
+  width: auto;
+  object-fit: contain;
+  border-radius: 0.625rem; /* 10px */
+  margin-left: -450px;
+}
+
+/* Right side container */
+.right-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  text-align: right;
+}
+
+/* Upper inner container text */
+.upper-inner-container {
+  font-size: 16px;
+  font-family: Arial, sans-serif;
+}
+
+.bold-text {
+  font-weight: bold;
+}
+
+/* Bottom inner container */
+.bottom-inner-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  align-items: flex-start;
+}
+
+/* Navigation list styles */
+.nav-wrapper {
+  padding-top: 16px;
+}
+
+.nav-list {
+  display: flex;
+  gap: 16px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  align-items: center;
+}
+
+/* Make Home and About us cursor pointer */
+.nav-list > li:not(.mentorship-menu) {
+  cursor: pointer;
+}
+
+/* Mentorship menu container */
+.mentorship-menu {
+  position: relative;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  user-select: none;
+}
+
+/* Dropdown icon next to Mentorship */
+.dropdown-icon {
+  margin-left: 4px;
+  font-size: 1.25rem; /* 20px */
+}
+
+/* Dropdown menu container */
+/* REMOVED margin-top to prevent hover gap */
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 150px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 8px 4px 16px rgba(0, 0, 0, 0.25);
+  display: flex;
+  flex-direction: column;
+  padding: 20px 15px;
+  gap: 13px;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease;
+  z-index: 50;
+  pointer-events: none;
+  
+  text-align: left;
+  align-items: flex-start;
+}
+
+/* Show dropdown on mentorship menu hover or dropdown hover */
+.mentorship-menu:hover .dropdown-menu,
+.dropdown-menu:hover {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto; /* enable interaction */
+}
+
+/* Dropdown item styles */
+.dropdown-item {
+  list-style: none;
+  cursor: pointer;
+  padding: 8px 12px;
+  border-radius: 6px;
+  transition: background-color 0.2s ease;
+  text-align: left;
+}
+
+/* On hover over dropdown item, background turns light gray */
+.dropdown-item:hover {
+  background-color: #d3d3d3; /* a nice grey */
+}
+
+/* Buttons container */
+.button-container {
+  display: flex;
+  gap: 15px;
+  width: 366px;
+  height: 50px;
+  align-items: center;
+}
+
+/* Expo Button */
+.expo-button {
+  width: 103px;
+  height: 50px;
+  background-color: #F28119;
+  border: none;
+  border-radius: 6px; /* 16px */
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  text-transform: uppercase;
+  padding: 13px 30px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.expo-button:hover {
+  background-color: #32CD32; /* lime green */
+}
+
+/* Download Brochure Button */
+.download-button {
+  flex-grow: 1;
+  height: 50px;
+  background-color: #F8FCFF;
+  border: 1px solid #F28119;
+  border-radius: 6px; /* 16px */
+  color: #F28119;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  text-transform: uppercase;
+  padding: 13px 30px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+
+  white-space: nowrap;       /* Prevent line breaks */
+  overflow: hidden;          /* Hide overflow */
+  text-overflow: ellipsis;   /* Optional, adds ... if overflow */
+  transition: background-color 0.3s ease;
+}
+
+
+.download-button:hover {
+  background-color: #F28119;
+  color: white;
+}
+
+.orange-bar {
+  display: flex;
+  flex-direction: column;
+  background-color: #F28119;  /* Orange */
+  color: white;               /* White text */
+  height: 45px;
+ 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+
+
+.nav-link {
+  color: black;
+  text-decoration: none;
+  font-weight: 500; /* optional: makes text clearer */
+}
+
+.nav-link:hover {
+  text-decoration: none; /* ensures no underline on hover */
+  color: #F28119; /* optional: color change on hover */
+}
+
+
+.mentorship-menu {
+  color: black;
+  text-decoration: none;
+  font-weight: 500; /* optional: makes text clearer */
+}
+
+.mentorship-menu:hover {
+  text-decoration: none; /* ensures no underline on hover */
+  color: #F28119; /* optional: color change on hover */
+}
+
+
+
+
+
+
+
+
+
+/* Container for the entire header */
+.left-container {
+  padding: 16px 140px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+
+/* Logo styles */
+.logo-image {
+  margin-left: -400px;
+  height: 80px;
+  width: auto;
+  object-fit: contain;
+  border-radius: 0.625rem; /* 10px */
+}
+
+/* Right side container */
+.right-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  text-align: right;
+}
+
+/* Upper inner container text */
+.upper-inner-container {
+  font-size: 16px;
+  font-family: Arial, sans-serif;
+}
+
+.bold-text {
+  font-weight: bold;
+}
+
+/* Bottom inner container */
+.bottom-inner-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  align-items: flex-start;
+}
+
+/* Navigation list styles */
+.nav-wrapper {
+  padding-top: 16px;
+}
+
+.nav-list {
+  width: 270px;
+  display: flex;
+  gap: 16px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  align-items: center;
+}
+
+/* Make Home and About us cursor pointer */
+.nav-list > li:not(.mentorship-menu) {
+  cursor: pointer;
+}
+
+/* Mentorship menu container */
+.mentorship-menu {
+  width: 260px;
+  position: relative;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  user-select: none;
+}
+
+
+
+/* Dropdown icon next to Mentorship */
+.dropdown-icon {
+  margin-left: 4px;
+  font-size: 1.25rem; /* 20px */
+}
+
+/* Dropdown menu container */
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 150px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 8px 4px 16px rgba(0, 0, 0, 0.25);
+  display: flex;
+  flex-direction: column;
+  padding: 20px 15px;
+  gap: 13px;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease;
+  z-index: 50;
+  pointer-events: none;
+  text-align: left;
+  align-items: flex-start;
+}
+
+/* Show dropdown on mentorship menu hover or dropdown hover */
+.mentorship-menu:hover .dropdown-menu,
+.dropdown-menu:hover {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+
+/* Dropdown item styles */
+.dropdown-item {
+  list-style: none;
+  cursor: pointer;
+  padding: 8px 12px;
+  border-radius: 6px;
+  transition: background-color 0.2s ease;
+  text-align: left;
+}
+
+/* On hover over dropdown item, background turns light gray */
+.dropdown-item:hover {
+  background-color: #d3d3d3;
+}
+
+/* Buttons container */
+.button-container {
+  display: flex;
+  gap: 15px;
+  width: 366px;
+  height: 50px;
+  align-items: center;
+}
+
+/* Expo Button */
+.expo-button {
+  width: 103px;
+  height: 50px;
+  background-color: #F28119;
+  border: none;
+  border-radius: 6px;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  text-transform: uppercase;
+  padding: 13px 30px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.expo-button:hover {
+  background-color: #32CD32;
+}
+
+/* Download Brochure Button */
+.download-button {
+  flex-grow: 1;
+  height: 50px;
+  background-color: #F8FCFF;
+  border: 1px solid #F28119;
+  border-radius: 6px;
+  color: #F28119;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  text-transform: uppercase;
+  padding: 13px 30px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  transition: background-color 0.3s ease;
+}
+
+.download-button:hover {
+  background-color: #F28119;
+  color: white;
+}
+
+.orange-bar {
+  display: flex;
+  flex-direction: column;
+  background-color: #F28119;
+  color: white;
+  height: 45px;
+  justify-content: center;
+  align-items: center;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.nav-link {
+  color: black;
+  text-decoration: none;
+  font-weight: 500;
+  white-space: nowrap;     /* 👈 Prevent line breaks */
+}
+
+
+.nav-link:hover {
+  text-decoration: none;
+  color: #F28119;
+}
+
+.mentorship-menu {
+  color: black;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.mentorship-menu:hover {
+  text-decoration: none;
+  color: #F28119;
+}
+
+/* Hamburger Icon Styles */
+.hamburger-icon {
+  display: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: #F28119;
+  z-index: 1001;
+}
+
+/* Desktop Only - Hide on mobile */
+.desktop-only {
+  display: flex;
+}
+
+/* Mobile Menu Styles */
+.mobile-menu {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 280px;
+  background-color: white;
+  box-shadow: -4px 0 15px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  padding: 80px 20px 20px 20px;
+  transform: translateX(0);
+  transition: transform 0.3s ease;
+}
+
+.mobile-nav-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.mobile-nav-list li {
+  padding: 15px 0;
+  border-bottom: 1px solid #f0f0f0;
+  cursor: pointer;
+}
+
+.mobile-nav-list li:last-child {
+  border-bottom: none;
+}
+
+.mobile-nav-list a {
+  color: black;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 500;
+  display: block;
+}
+
+.mobile-nav-list a:hover {
+  color: #F28119;
+}
+
+/* Mobile menu buttons */
+.mobile-nav-list .expo-button,
+.mobile-nav-list .download-button {
+  width: 100%;
+  margin-top: 10px;
+}
+
+.mobile-nav-list .download-button {
+  font-size: 14px;
+}
+
+/* Mobile Responsive Styles */
+@media screen and (max-width: 768px) {
+  .left-container {
+    padding: 16px 20px;
+  }
+  
+  .logo-image-header {
+    height: 60px;
+  }
+  
+  /* Show hamburger icon on mobile */
+  .hamburger-icon {
+    display: block;
+  }
+  
+  /* Hide desktop navigation on mobile */
+  .desktop-only {
+    display: none;
+  }
+  
+  .upper-inner-container {
+    font-size: 14px;
+  }
+  
+  .orange-bar {
+    font-size: 18px;
+    height: 40px;
+  }
+}
+
+/* Tablet Responsive Styles */
+@media screen and (max-width: 1024px) and (min-width: 769px) {
+  .left-container {
+    padding: 16px 40px;
+  }
+  
+  .button-container {
+    width: 300px;
+  }
+  
+  .download-button {
+    font-size: 14px;
+  }
+  
+  .upper-inner-container {
+    font-size: 14px;
+  }
+}
+
+/* Small mobile devices */
+@media screen and (max-width: 480px) {
+  .left-container {
+    padding: 12px 15px;
+  }
+  
+  .logo-image-header {
+    height: 50px;
+  }
+  
+  .mobile-menu {
+    width: 100%;
+    padding: 80px 15px 20px 15px;
+  }
+  
+  .orange-bar {
+    font-size: 16px;
+    height: 35px;
+  }
+}
+
+/* Mobile menu overlay for very small screens */
+@media screen and (max-width: 480px) {
+  .mobile-menu {
+    width: 100vw;
+    left: 0;
+    right: 0;
+  }
+}
+
+
